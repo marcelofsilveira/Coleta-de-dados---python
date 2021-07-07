@@ -14,3 +14,12 @@ button _buscar = driver.find_element_by_xpath('//div/button[contains(@class, "fi
 button_buscar.click()
 sleep(2)
 
+print('Fechando anúncio')
+button_fechar = driver.find_element_by_class_name('btn-closetar')
+button_fechar.click()
+sleep(1)
+
+print ('Baixando dados...')
+button_downloaded = driver.find_element_by_xpath('//div/a[contains(@class, "btn-download")]')
+
+button_download.click()
